@@ -54,6 +54,10 @@
         display: flex;
         align-items: flex-start;
         gap: 20px;
+        &-description{
+            text-decoration: none;
+            color: $WhiteActive;
+        }
     }
     &__contact-email{
         display: flex;

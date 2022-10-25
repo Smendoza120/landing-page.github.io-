@@ -529,6 +529,10 @@
   align-items: flex-start;
   gap: 20px;
 }
+.footer__contact-phone-description {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
 .footer__contact-email {
   display: flex;
   align-items: flex-start;
