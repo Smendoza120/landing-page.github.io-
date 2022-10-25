@@ -6,11 +6,6 @@
     color: $WhiteActive;
     font-family: $FontOpenSans;
     font-size: 14px;
-    // @media (min-width: 1115px){
-    //     border: 1px solid red;
-    //     padding: 100px 0 50px 0;
-
-    // }
     &__container{
         margin: 0 28px;
         @media (min-width: 1115px){
@@ -20,6 +15,7 @@
 
     }
     &__logo{
+        margin-left: 28px;
         @media (min-width: 1115px){
             margin-left: 60px;
         }

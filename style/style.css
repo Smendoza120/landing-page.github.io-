@@ -275,7 +275,7 @@
   display: flex;
   align-items: center;
   height: 28px;
-  width: 154px;
+  width: 165px;
   border-bottom: 1px solid hsl(176deg, 68%, 64%);
 }
 .productive__content-icon:hover {
@@ -481,6 +481,9 @@
     display: flex;
     justify-content: space-between;
   }
+}
+.footer__logo {
+  margin-left: 28px;
 }
 @media (min-width: 1115px) {
   .footer__logo {
