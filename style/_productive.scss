@@ -1,0 +1,90 @@
+@import 'variables';
+
+.productive{
+    background: $DarkBlue2;
+    padding: 40px 0;
+    @media (min-width: 1115px){
+        padding: 0px 0px 40px 0;
+    }
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        @media (min-width: 1115px){
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: 0 20px;
+        }
+    }
+    &__image{
+        width: 290px;
+        @media (min-width: 1115px){
+            width: 50%;
+            margin-left: 50px;
+            margin-right: 20px;
+        }
+    }
+    &__content{
+        margin-top: 25px;
+        text-align: start;
+        padding: 0 25px;
+        font-family: $FontRaleway;
+        @media (min-width: 1115px){
+            margin-top: 0;
+        }
+        &-title{
+            color: $WhiteActive;
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 12px;
+            @media (min-width: 1115px){
+                font-size: 32px;
+                width: 350px;
+            }
+        }
+        &-paragraph{
+            color: $WhiteActive;
+            font-size: 14px;
+            font-weight: 400;
+            padding: 8px 0;
+            @media (min-width: 1115px){
+                font-size: 18px;
+                padding-right: 20px;
+            }
+        }
+        &-icon{
+            display: flex;
+            align-items: center;
+            height: 28px;
+            width: 154px;
+            border-bottom: 1px solid $Cyan;
+            &:hover{
+                border-bottom: 1px solid $WhiteActive;
+                cursor: pointer;
+            }
+            &:hover &-img{
+                content: url('../images/icon-arrow-white.svg');
+                cursor: pointer;
+            }
+            &-link{
+                color: $Cyan;
+                font-size: 14px;
+                font-weight: 400;
+                text-decoration: none;
+                display: block;
+                margin-right: 10px;
+                &:hover{
+                    color: $WhiteActive;
+                    cursor: pointer;
+                }
+            }
+            &-img{
+                width: 15px;
+                height: 15px;
+                
+            }
+        }
+    }
+}

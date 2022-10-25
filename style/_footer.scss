@@ -1,0 +1,145 @@
+@import 'variables';
+
+.footer{
+    background: $DarkBlue3;
+    padding: 220px 0 50px 0;
+    color: $WhiteActive;
+    font-family: $FontOpenSans;
+    font-size: 14px;
+    // @media (min-width: 1115px){
+    //     border: 1px solid red;
+    //     padding: 100px 0 50px 0;
+
+    // }
+    &__container{
+        margin: 0 28px;
+        @media (min-width: 1115px){
+            display: flex;
+            justify-content: space-between;
+        }
+
+    }
+    &__logo{
+        @media (min-width: 1115px){
+            margin-left: 60px;
+        }
+    }
+    &__contact-container{
+        margin-top: 30px;
+        @media (min-width: 1115px){
+            display: flex;
+            align-items: flex-start;
+            justify-content: start;
+            width: 700px;
+            margin-left: 60px;
+        }
+    }
+    &__contact-location{
+        display: flex;
+        align-items: flex-start;
+        gap: 25px;
+        @media (min-width: 1115px){
+            width: 450px;
+        }
+    }
+    &__contact-pym{
+        @media (min-width: 1115px){
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: start;
+            margin-left: 20px;
+            margin-top: -20px;
+            margin-right: 20px;
+        }
+    }
+    &__contact-phone{
+        margin: 20px 0;
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    &__contact-email{
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        margin-bottom: 60px;
+    }   
+    &__navbar{
+        margin-bottom: 30px;
+        @media (min-width: 1115px){
+            width: 100px;
+            margin-top: 25px;
+            margin-right: 20px;
+        }
+        &-list{
+            list-style: none;
+        }
+        &-link{
+            color: $WhiteActive;
+            text-decoration: none;
+            padding-bottom: 20px;
+            display: inline-block;
+            font-weight: 400;
+            font-size: 18px;
+            &:hover{
+                color: $WhiteOpacity;
+            }
+        }
+    }
+    &__navbar-contact{
+        margin-bottom: 50px;
+        @media (min-width: 1115px){
+            width: 150px;
+            margin-top: 25px;
+        }
+    }
+    &__social{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &-list{
+            display: flex;
+            list-style: none;
+            align-items: center;
+            justify-content: space-between;
+            width: 150px;
+        }     
+        &-link{
+            color: $WhiteActive;
+            width: 35px;
+            height: 35px;
+            border-radius: 50px;
+            border: 1px solid $WhiteActive;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+    }
+}
+
+.facebook{
+    transition: all .3s linear;
+    &:hover{
+        color: rgb(59, 89, 152);
+        border: 1px solid rgb(59, 89, 152);
+    }
+}
+
+.twitter{
+    transition: all .3s linear;
+    &:hover{
+        color: rgb(0, 172, 238);
+        border: 1px solid rgb(0, 172, 238);
+    }
+}
+
+.instagram{
+    transition: all .3s linear;
+    &:hover{
+        color: rgb(63, 114, 155);
+        border: 1px solid rgb(63, 114, 155);
+    }
+}

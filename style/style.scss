@@ -1,0 +1,20 @@
+@use 'variables' as v;
+@import 'header';
+@import 'navbar';
+@import 'content';
+@import 'information';
+@import 'productive';
+@import 'comments';
+@import 'form';
+@import 'footer';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    background: v.$DarkBlue4;
+    margin-bottom: -355px;
+}

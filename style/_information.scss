@@ -1,0 +1,55 @@
+@import 'variables';
+
+.information{
+    background: $DarkBlue2;
+    width: 100%;
+    &__container{
+        padding: 80px 25px 20px 25px;
+        text-align: center;
+        font-family: $FontOpenSans;
+        @media (min-width: 1115px){
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            padding: 0px;
+            .uno{
+                grid-area: 2 / 2 / 3 / 3; 
+            }
+            .dos{
+                grid-area: 2 / 4 / 3 / 5; 
+            }
+            .tres{
+                grid-area: 4 / 2 / 5 / 3; 
+            }
+            .cuatro{
+                grid-area: 4 / 4 / 5 / 5;
+            }
+        }
+    }
+    &__cart{
+        margin-bottom: 60px;
+        @media (min-width: 1115px){
+            margin-bottom: 0;
+        }
+        &-img{
+            margin-bottom: 20px;
+            width: 65px;
+            @media (min-width: 1115px){
+                width: 90px;
+            }
+        }
+        &-title{
+            color: $WhiteActive;
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
+        &-paragraph{
+            color: $WhiteActive;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+}

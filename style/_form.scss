@@ -1,0 +1,89 @@
+@import 'variables';
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-container{
+        position: relative;
+        top: -190px;
+        margin: 10px 20px;
+        text-align: center;
+        background: $DarkBlue1;
+        border-radius: 10px;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 7px 7px 0px 0px rgba(0,0,0,0.2);
+        @media (min-width: 1115px){
+            width: 800px;
+        }
+    }
+    &__description{
+        color: $WhiteActive;
+        font-family: $FontOpenSans;
+        margin: 20px;
+        &-title{
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 10px;
+            @media (min-width: 1115px){
+                font-size: 32px;
+                margin: -10px 0 20px 0;
+            }
+        }
+        &-paragraph{
+            font-size: 14px;
+            @media (min-width: 1115px){
+                font-size: 18px;
+            }
+        }
+    }
+    &__mail{
+        &-input{
+            width: 240px;
+            border: none;
+            border-radius: 50px;
+            padding: 15px;
+            margin-bottom: 20px;
+            font-family: $FontRaleway;
+            @media (min-width: 1115px){
+                margin: 0 20px 0 0;
+                width: 465px;
+            }
+        }
+        &-button{
+            border: none;
+            width: 240px;
+            padding: 15px;
+            border-radius: 50px;
+            color: $WhiteActive;
+            background: $Blue;
+            font-family: $FontRaleway;
+            transition: all .3s linear;
+            &:hover{
+                background: $Cyan;
+                cursor: pointer;
+            }
+        }
+    }
+    &__mistakes{
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+        width: 90%;
+        margin-top: 10px;
+    }
+    &__error{
+        text-align: start;
+        color: $LightRed;
+        font-size: 14px;
+        font-weight: 400;
+        display: none;
+    }
+    &__error-action{
+        display: block;
+    }
+}
