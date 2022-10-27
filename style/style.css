@@ -605,20 +605,20 @@
   border: 1px solid rgb(59, 89, 152);
 }
 
-.twitter {
+.github {
   transition: all 0.3s linear;
 }
-.twitter:hover {
-  color: rgb(0, 172, 238);
-  border: 1px solid rgb(0, 172, 238);
+.github:hover {
+  color: rgb(138, 55, 152);
+  border: 1px solid rgb(138, 55, 152);
 }
 
-.instagram {
+.linkedin {
   transition: all 0.3s linear;
 }
-.instagram:hover {
-  color: rgb(63, 114, 155);
-  border: 1px solid rgb(63, 114, 155);
+.linkedin:hover {
+  color: rgb(14, 118, 168);
+  border: 1px solid rgb(14, 118, 168);
 }
 
 * {

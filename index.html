@@ -34,8 +34,8 @@
 
     <section class="content">
       <div class="details">
-        <img class="details__image" src="./images/illustration-intro.png" alt="image intro">
-        <h2 class="details__title">All your files in one secure location, accessible anywhere.</h2>
+        <img class="details__image" src="./images/illustration-intro.png" alt="image intro" aria-hidden="true">
+        <h1 class="details__title">All your files in one secure location, accessible anywhere.</h1>
         <div class="details__content">
           <p class="details__paragraph">
             Fylo stores all your most important files in one secure location. Access them wherever 
@@ -49,7 +49,7 @@
     <section class="information">
       <div class="information__container">
         <div class="information__cart uno">
-          <img class="information__cart-img" src="./images/icon-access-anywhere.svg" alt="access-anywhere">
+          <img class="information__cart-img" src="./images/icon-access-anywhere.svg" alt="access-anywhere" aria-hidden="true">
           <h3 class="information__cart-title">Access your files, anywhere</h3>
           <p class="information__cart-paragraph">
             The ability to use a smartphone, tablet, or computer to access your account means your 
@@ -58,7 +58,7 @@
         </div>
 
         <div class="information__cart dos">
-          <img class="information__cart-img" src="./images/icon-security.svg" alt="access-anywhere">
+          <img class="information__cart-img" src="./images/icon-security.svg" alt="access-anywhere" aria-hidden="true">
           <h3 class="information__cart-title">Security you can trust</h3>
           <p class="information__cart-paragraph">
             2-factor authentication and user-controlled encryption are just a couple of the security 
@@ -67,7 +67,7 @@
         </div>
 
         <div class="information__cart tres">
-          <img class="information__cart-img" src="./images/icon-collaboration.svg" alt="access-anywhere">
+          <img class="information__cart-img" src="./images/icon-collaboration.svg" alt="access-anywhere" aria-hidden="true">
           <h3 class="information__cart-title">Real-time collaboration</h3>
           <p class="information__cart-paragraph">
             Securely share files and folders with friends, family and colleagues for live collaboration. 
@@ -76,7 +76,7 @@
         </div>
 
         <div class="information__cart cuatro">
-          <img class="information__cart-img" src="./images/icon-any-file.svg" alt="access-anywhere">
+          <img class="information__cart-img" src="./images/icon-any-file.svg" alt="access-anywhere" aria-hidden="true">
           <h3 class="information__cart-title">Store any type of file</h3>
           <p class="information__cart-paragraph">
             Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all 
@@ -88,7 +88,7 @@
 
     <section class="productive">
       <div class="productive__container">
-        <img class="productive__image" src="./images/illustration-stay-productive.png" alt="image-productive">
+        <img class="productive__image" src="./images/illustration-stay-productive.png" alt="image-productive" aria-hidden="true"> 
         <div class="productive__content">
           <h3 class="productive__content-title">Stay productive, wherever you are</h3>
           <p class="productive__content-paragraph">
@@ -101,7 +101,7 @@
           </p>
           <div class="productive__content-icon">
             <a class="productive__content-icon-link" href="#">See how Fylo works</a>
-            <img class="productive__content-icon-img" src="./images/icon-arrow.svg" alt="arros-icon">
+            <img class="productive__content-icon-img" src="./images/icon-arrow.svg" alt="arros-icon" aria-hidden="true">
           </div>
         </div>
       </div>
@@ -109,7 +109,7 @@
 
     <section class="comments">
       <div class="comments__container">
-        <img class="comments__img" src="./images/bg-quotes.png" alt="quotes">
+        <img class="comments__img" src="./images/bg-quotes.png" alt="quotes" aria-hidden="true">
         <div class="comments__carts-container">
           <div class="comments__carts">
             <p class="comments__carts-paragraph">
@@ -177,11 +177,11 @@
   </main>
 
   <footer class="footer">
-    <img class="footer__logo" src="./images/logo.svg" alt="logo">
+    <img class="footer__logo" src="./images/logo.svg" alt="logo" aria-hidden="true">
     <div class="footer__container">
       <div class="footer__contact-container">
         <div class="footer__contact-location">
-          <img class="footer__contact-location-img" src="./images/icon-location.svg" alt="location">
+          <img class="footer__contact-location-img" src="./images/icon-location.svg" alt="location" aria-hidden="true">
           <p class="footer__contact-location-description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
             dolore magna aliqua
@@ -190,11 +190,11 @@
 
         <div class="footer__contact-pym">
           <div class="footer__contact-phone">
-            <img class="footer__contact-phone-img" src="./images/icon-phone.svg" alt="phone">
+            <img class="footer__contact-phone-img" src="./images/icon-phone.svg" alt="phone" aria-hidden="true">
             <p class="footer__contact-phone-description">+1-543-123-4567</p>
           </div>
           <div class="footer__contact-email">
-            <img class="footer__contact-email-img" src="./images/icon-email.svg" alt="phone">
+            <img class="footer__contact-email-img" src="./images/icon-email.svg" alt="phone" aria-hidden="true">
             <p class="footer__contact-email-description">example@fylo.com</p>
           </div>
         </div>
@@ -218,16 +218,28 @@
       </div>
       <div class="footer__social">
         <ul class="footer__social-list">
-          <li><a href="#" class="footer__social-link facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
-          <li><a href="#" class="footer__social-link twitter"><i class="fa-brands fa-twitter"></i></a></li>
-          <li><a href="#" class="footer__social-link instagram"><i class="fa-brands fa-instagram"></i></a></li>
+          <li>
+            <a class="footer__social-link facebook" aria-label="This link directs you to the layout designer's facebook page" href="https://www.facebook.com/harold.sanchez.05/" target="_blank">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a class="footer__social-link  github" aria-label="This link directs you to the layout designer's github page" href="https://github.com/Smendoza120" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a class="footer__social-link  linkedin" aria-label="This link directs you to the layout designer's linkedin page" href="https://www.linkedin.com/in/harold-yulian-sanchez-alcantar-218b45180/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
   </footer>
   <footer>
     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" aria-label="This link directs you to the challenge page">Frontend Mentor</a>. 
       Coded by <a href="#">Harold Yulian Sanchez Alcantar</a>.
     </p>
   </footer>
